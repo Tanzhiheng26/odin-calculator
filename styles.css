@@ -1,0 +1,91 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    height: 550px;
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #ABB2B9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#display {
+    height: 120px;
+    background-color: #EAECEE;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* targets all children of #display */
+#display > * {
+    flex: 1;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#equation-row {
+    font-size: 24px;
+}
+
+#result-row {
+    font-size: 30px;
+}
+
+#buttons {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+button {
+    display: block;
+    margin: 5px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+#clear,
+#delete {
+    width: 160px;
+}
+
+#clear {
+    background-color: #F1948A ;
+}
+#clear:hover {
+    background-color: #F5B7B1;
+}
+
+#delete {
+    background-color: #C39BD3;
+}
+#delete:hover {
+    background-color: #D7BDE2;
+}
+
+.small-button {
+    width: 80px;
+    background-color: #EAECEE; 
+}
+.small-button:hover {
+    background-color: white;
+}
